@@ -2,99 +2,26 @@
 <html>
 <head>
     <meta charset="UTF-8" />
-    <title>Sobre</title>
+    <title>Bem-Vindo 👋</title>
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="/favicon.ico">
     
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
     
-        <!-- ICONS -->
+        <!-- ICONS AND FUNCTIONS -->
         <script src="https://kit.fontawesome.com/3695f45321.js" crossorigin="anonymous"></script>
         <script src="functions.js"></script>
 
         <style>
-            * {
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-                font-family: Montserrat,sans-serif;
-                text-decoration: none;
-                color:white;
-            }
-
-            header {
-                height: 60px;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                padding: 1rem 5rem;
-                font-size: 1.6rem;
-                font-weight: 500;
-                background-color: rgb(30, 30, 30);
-            }
-
             nav ul {
                 display: flex;
                 align-items: center;
                 list-style: none;
-                gap: 4rem
-            }
-
-            a:visited {
-                color:#ffffff;
-                text-decoration:none;
-            }
-
-            a:hover {
-                color: #407bff;
-            }
-
-            @media screen and (max-width: 780px) {
-            header {
-                justify-content:center;
-                font-size: 1.8rem
-                }
-
-            header .logo {
-                display: none
-                }
-            }
-
-            @media screen and (max-width: 480px) {
-            header {
-                justify-content:center;
-                font-size: 1.4rem
-                }
-
-            header .logo {
-                display: none
-                }
-            }
-
-            html,body {
-                font-size: 62.5%
-            }
-
-            body {
-                width: 100%;
-                height: 100%;
-                background-color: #000000;
-                color: white;
-            }
-
-            .material-symbols-outlined {
-                position: fixed;
-                bottom: 30px;
-                right: 30px;
-                display: none;
-            }
-
-            .material-symbols-outlined:hover {
-                color: #407bff;
+                gap: 4rem;
+                color:white;
+                font-size: 1.6rem;
             }
 
             .apresentation {
@@ -105,18 +32,12 @@
                 gap: 2rem
             }
 
-            .apresentation h1 {
-                font-size: 4.8rem;
-                font-weight: 600;
-                letter-spacing: 6%
-            }
-
             .apresentation p {
                 max-width: 600px;
                 text-align: justify;
                 font-size: 1.8rem;
                 line-height: 1.8;
-                margin-bottom: 2rem;
+                margin-bottom: 0rem;
                 align-items: left;
                 letter-spacing: 4%;
             }
@@ -128,7 +49,7 @@
             }
 
             .apresentation p {
-                max-width: 38rem;
+                /*max-width: 38rem;*/
                 font-size: 1.4rem
                 }
 
@@ -146,102 +67,183 @@
                 }
             }
 
-            hr {
-                width: 50%;
-            }
-
-            .footer {
+            .goals {
+                margin-top: 100px;
                 width: 100%;
-                height: 200px;
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
                 align-items: center;
-                gap: 3rem;
-                background-color: rgb(30, 30, 30);
+                gap: 2rem
             }
 
-            .footer .contact {
-                display: flex;
-                gap: 3rem
+            .goals h1 {
+                font-size: 4.8rem;
+                font-weight: 600;
+                letter-spacing: 6%
             }
 
-            .footer .contact .icon__contact {
-                width: 5rem;
-                height: 5rem;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-size: 3rem;
-                text-decoration: none;
-                color: #ffffff;
-                border-radius: .2rem;
+            .goals p, ul {
+                max-width: 600px;
+                text-align: justify;
+                font-size: 1.8rem;
+                line-height: 1.8;
+                margin-bottom: 0rem;
+                align-items: left;
+                letter-spacing: 4%;
+
             }
 
-            .footer .contact .icon__contact:hover {
-                border: 1px solid #ffffff;
-                border-radius: .5rem;
-                cursor: pointer;
+            @media screen and (max-width: 780px) {
+            .goals h1 {
+                font-size:3.6rem
+                }
             }
 
-            .footer .copyright p {
-                font-size: 1.2rem
-            }
+            .goals p, ul {
+                /*max-width: 38rem;*/
+                font-size: 1.4rem
+                }
 
             @media screen and (max-width: 480px) {
-            .footer .contact .icon__contact {
-                font-size:2.4rem
+            .goals h1 {
+                max-width:30rem;
+                font-size: 3rem;
+                text-align: center
                 }
-            .footer .copyright p {
-                font-size: 1rem
+
+            .goals p {
+                max-width: 28rem;
+                font-size: 1.2rem;
+                text-align: center;
                 }
             }
+
+            .skills {
+                margin-top: 100px;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 2rem
+            }
+
+            .skills h1 {
+                font-size: 4.8rem;
+                font-weight: 600;
+                letter-spacing: 6%
+            }
+
+            .skills p {
+                max-width: 600px;
+                text-align: justify;
+                font-size: 1.8rem;
+                line-height: 1.8;
+                margin-bottom: 0rem;
+                align-items: left;
+                letter-spacing: 4%;
+            }
+
+            @media screen and (max-width: 780px) {
+            .skills h1 {
+                font-size:3.6rem
+                }
+            }
+
+            .skills p {
+                /*max-width: 38rem;*/
+                font-size: 1.4rem
+                }
+
+            @media screen and (max-width: 480px) {
+            .skills h1 {
+                max-width:30rem;
+                font-size: 3rem;
+                text-align: center
+                }
+
+            .skills p {
+                max-width: 28rem;
+                font-size: 1.2rem;
+                text-align: center;
+                }
+            }
+
+            table {
+                font-size: 1.4rem;
+                border-spacing: 20px;
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+            }
+
+            td, th {
+                border: 1px solid #407bff;
+                text-align: center;
+                padding: 8px;
+                }
 
         </style>
 </head>
-<header class="header-light">
-    <div class="logo">Lucas Giacomelli</div>
-    <nav>
-        <ul>
-            <li> <a href="index.html">Home</a></li>
-            <li> <a href="about.html">Sobre</a></li>
-            <li> <a href="formacao.html">Formação</a></li>
-            <li> <a href="projetos.html">Projetos</a></li>
-            <li> <a href="contato.html">Contato</a></li>
-        </ul>
-    </nav>
-</header>
+
 <body>
+    <!-- Espaço onde o cabeçalho será carregado -->
+    <div id="header"></div>
 <br><br><br><br><br>
 <section class="about-template">
     <section class="apresentation">
-        <h1 >Sobre mim</h1>
+            <h1 >Sobre mim</h1>
+            <hr>
+            <p>Nunca sei o que escrever nesses tópicos para parecer ser uma pessoa interessante ou legal. Dito isso, fique com dois parágrafos de <em>Lorem ipsum</em> enquanto penso em algo.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, eius! Quia nam eaque deleniti corporis odit tempore reprehenderit porro optio necessitatibus eveniet id, sequi exercitationem recusandae impedit ipsum quibusdam iusto!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores excepturi laudantium cupiditate illum ratione vel obcaecati asperiores soluta inventore nisi. Consequatur quos non libero sint harum officia quam id ipsum? </p>
+    </section>
+    <section class="goals">
+        <h1>Objetivos</h1>
         <hr>
-        <p>Um constante aprendiz, entusiasta do mundo tecnológico e suas ramificações, que curte saber como tudo isso funciona.</p>
-        <p>Sou estudante do curso de Análise e Desenvolvimento de Sistemas, e estou em busca de mais conhecimento, sanando curiosidades e indo atrás de novos desafios.</p>
-        <p>Nos dias atuais, sou Analista de Testes de um sistema ERP, com um foco no ramo varejista. Esse foco nasce da minha experiência anterior como Analista de Implementação na mesma empresa e também na Raia Drogasil S/A, onde trabalhei por mais de 4 anos. Nessa empresa tive a oportunidade de iniciar minha carreira como atendente I, passar para atendente II e ser promovido para um cargo de liderança, tendo o posto de supervisor, liderando um time com mais de 10 colaboradores.</p>  
-        <p>Tenho uma paixão pelo mundo dos games e sou amante de um futebol, tendo esses como os meus principais hobbies. </p>  
-        </div>
+        <p>Assim como você que está lendo (acredito e torço que sim), tenho objetivos pessoais e profissionais. Abaixo, segue uma pequena lista com alguns deles:</p>
+        <ul>
+            <li>Adquirir mais conhecimento para ajudar pessoas e negócios.</li>
+            <li>Conhecer culturas diferentes.</li>
+            <li>Estar em constante aprendizado para ampliar minha zona de conforto e me desafiar.</li>
+            <li>Beber +2 litros de água por dia.</li>
+            <li>Me divertir.</li>
+        </ul>
+        <p><strong>Atenção:</strong> Objetivos podem ser alterados conforme forem alcançados e novas oportunidades forem desbloqueadas.</p>
+    </section>
+    <section class="skills">
+        <h1>Habilidades</h1>
+        <hr>
+        <p>A famosa "hora de vender o peixe"...Para esse tópico vou citar as habilidades como elas costumam ser divididas, em duas grandes partes chamadas, comumente, de <em>Hard skills</em> (parte mais técinica) e <i>Soft skills</i> (parte mais comportamental).</p>
+        <p>Como as <em>Hard skills</em> estão presentes na página <a href="index.html" style="text-decoration: underline;">Início</a>, vou me concentrar apenas nas <i>Soft skills</i>.
+        <p>Tais habilidades foram adquiridas e aprimoradas durante minhas experiências profissionais como Gerente de loja, Analista de implementação de sistemas e Analista de teste (QA).</p>
+        <table>
+            <tr>
+                <th colspan="3">Soft skills</th>
+            </tr>
+            <tr>
+                <td>Adaptabilidade</td>
+                <td>Comunicação</td>
+                <td>Criatividade</td>
+            </tr>
+            <tr>
+                <td>Empatia</td>
+                <td>Ética</td>
+                <td>Gestão do tempo</td>
+            </tr>
+            <tr>
+                <td>Inovação</td>
+                <td>Liderança</td>
+                <td>Organização</td>
+            </tr>
+            <tr>
+                <td>Pensamento critico</td>
+                <td>Resolução de problemas</td>
+                <td>Trabalho em equipe</td>
+            </tr>
+        </table>
     </section>
 </section>
 <br><br><br><br><br>
+    <!-- Espaço onde o rodapé será carregado -->
+    <div id="footer"></div>
 </body>
-<footer class="footer">
-    <div class="contact">
-        <a class="icon__contact" href="https://www.linkedin.com/in/lucas-giacomelli-bb4922219" target="_blank">
-            <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
-        </a>
-        <a class="icon__contact" href="https://api.whatsapp.com/send?phone=5551995534090&amp;text=Olá,%20como%20vai?!" target="_blank"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
-        </a>
-        <a class="icon__contact" href="mailto:lukas.giacomelly@gmail.com" target="_blank"><i class="fa-solid fa-envelope" aria-hidden="true"></i>
-        </a>
-    </div>
-    <div class="copyright"><p>© LUCAS GIACOMELLI 2025 | Todos os direitos reservados.</p>
-    </div>
-    <div class="seta"></div>
-        <a href="#top">
-            <span class="material-symbols-outlined">stat_1</span> 
-        </a>
-    </div>
-</footer>
 </html>

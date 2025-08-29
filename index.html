@@ -2,302 +2,28 @@
 <html>
 <head>
     <meta charset="UTF-8" />
-    <title>Home</title>
+    <title>Bem-Vindo 👋</title>
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="/favicon.ico">
     
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
     
-        <!-- ICONS -->
+        <!-- ICONS AND FUNCTIONS -->
         <script src="https://kit.fontawesome.com/3695f45321.js" crossorigin="anonymous"></script>
         <script src="functions.js"></script>
-        <style>
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Montserrat, sans-serif;
-            text-decoration: none;
-            color:white;
-        }
-
-        header {
-            height: 60px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 5rem;
-            font-size: 1.6rem;
-            font-weight: 500;
-            background-color: rgb(30, 30, 30);
-        }
-
-        nav ul {
-            display: flex;
-            align-items: center;
-            list-style: none;
-            gap: 4rem;
-            color:white;
-        }
-
-        a:visited {
-            color:#ffffff;
-            text-decoration:none;
-        }
-
-        a:hover {
-            color: #407bff;
-        }
-
-        @media screen and (max-width: 780px) {
-        header {
-            justify-content:center;
-            font-size: 1.8rem
-            }
-
-        header .logo {
-            display: none
-            }
-        }
-
-        @media screen and (max-width: 480px) {
-        header {
-            justify-content:center;
-            font-size: 1.4rem
-            }
-
-        header .logo {
-            display: none
-            }
-        }
-
-        html,body {
-            font-size: 62.5%
-        }
-
-        body {
-            width: 100%;
-            height: 100%;
-            background-color: #000000;
-            color: white;
-        }
-
-        .material-symbols-outlined {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            display: none;
-        }
-
-        .material-symbols-outlined:hover {
-            color: #407bff;
-        }
-
-        .apresentation {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 6.2rem
-        }
-
-        .apresentation h1 {
-            font-size: 4.8rem;
-            font-weight: 600;
-            letter-spacing: 6%
-        }
-
-        .apresentation p {
-            max-width: 550px;
-            text-align: center;
-            font-size: 1.8rem;
-            letter-spacing: 4%
-        }
-
-        .apresentation p, .apresentation h1 {
-            text-shadow: 0 2.5px 2.5px #000000cc
-        }
-
-        .apresentation a{
-            max-width: 27rem;
-            width: 100%;
-            padding: 1.8rem 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.8rem;
-            text-decoration: none;
-            color: white;
-            background-color: #407bff;
-            border: none;
-            border-radius: 1px;
-            cursor: pointer;
-        }
-
-        .apresentation a:hover {
-            background-color: #2669fc;
-        }
-
-        .apresentation .skills {
-            display: flex;
-            max-width: 800px;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 6rem
-        }
-
-        .apresentation .skills .icon {
-            width: 8rem;
-            height: 8rem;
-            padding: 1.6rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: 1px solid #2f2e3b;
-            border-radius: .5rem;
-            cursor: pointer;
-        }
-
-        .apresentation .skills .icon img {
-            width: 100%
-        }
-
-        .apresentation .skills .icon.html:hover {
-            border-color: #e44d26
-        }
-
-        .apresentation .skills .icon.css:hover {
-            border-color: #2962f0
-        }
-
-        .apresentation .skills .icon.js:hover {
-            border-color: #f7df1e
-        }
-
-        @media screen and (max-width: 780px) {
-        .apresentation h1 {
-            font-size:3.6rem
-            }
-
-        .apresentation p {
-            max-width: 38rem;
-            font-size: 1.4rem
-            }
-
-        .apresentation a {
-            max-width: 20rem;
-            padding: 1.4rem 0;
-            font-size: 1.6rem
-            }
-
-        .apresentation .skills {
-            display: grid;
-            grid-template-columns: repeat(4,1fr);
-            grid-auto-rows: 50px;
-            gap: 4rem
-            }
-        }
-
-        @media screen and (max-width: 480px) {
-        .apresentation h1 {
-            max-width:30rem;
-            font-size: 3rem;
-            text-align: center
-            }
-
-        .apresentation p {
-            max-width: 28rem;
-            font-size: 1.2rem
-            }
-
-        .apresentation a {
-            max-width: 16rem;
-            padding: 1rem 0;
-            font-size: 1.2rem
-            }
-
-        .apresentation .skills {
-            display: grid;
-            grid: auto / repeat(3,1fr);
-            gap: 1rem
-            }
-        }
-
-        .footer {
-            width: 100%;
-            height: 200px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 3rem;
-            background-color: rgb(30, 30, 30);
-        }
-
-        .footer .contact {
-            display: flex;
-            gap: 3rem
-        }
-
-        .footer .contact .icon__contact {
-            width: 5rem;
-            height: 5rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 3rem;
-            text-decoration: none;
-            color: #ffffff;
-            border-radius: .2rem;
-        }
-
-        .footer .contact .icon__contact:hover {
-            border: 1px solid #ffffff;
-            border-radius: .5rem;
-            cursor: pointer;
-        }
-
-        .footer .copyright p {
-            font-size: 1.2rem
-        }
-
-        @media screen and (max-width: 480px) {
-        .footer .contact .icon__contact {
-            font-size:2.4rem
-            }
-        .footer .copyright p {
-            font-size: 1rem
-            }
-        }
-
-        </style>
-
 </head>
-<header class="header-light">
-    <div class="logo">Lucas Giacomelli</div>
-    <nav>
-        <ul>
-            <li> <a href="index.html">Home</a></li>
-            <li> <a href="about.html">Sobre</a></li>
-            <li> <a href="formacao.html">Formação</a></li>
-            <li> <a href="projetos.html">Projetos</a></li>
-            <li> <a href="contato.html">Contato</a></li>
-        </ul>
-    </nav>
-</header>
 
 <body>
+    <!-- Espaço onde o cabeçalho será carregado -->
+    <div id="header"></div>
 <br><br><br><br><br>
 <section class="home-template">
     <section class="apresentation">
-        <h1 >ANALISTA DE TESTES</h1>
+        <h1 >ANALISTA DE TESTES (QA)</h1>
         <p> Pensando e compartilhando Qualidade </p>
-        <a href="meuCV.pdf" target="_blank" download="meuCV.pdf"> Download CV </a>
+        <a href="Arquivos/meuCV.pdf" target="_blank" download="CV_Lucas_Giacomelli.pdf"> Download CV </a>
         <div class="skills">
             <div class="icon html">
                 <img src="data:image/svg+xml,%3csvg%20width='53'%20height='61'%20viewBox='0%200%2053%2061'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M0.948242%200.276855L5.65231%2053.474L26.76%2060.4899L48.0024%2053.474L52.7065%200.276855H0.948242ZM42.4896%2017.4671H17.7157L18.2684%2024.1067H41.937L40.1039%2044.0523L26.9082%2047.6812V47.7215H26.76L13.4565%2044.0523L12.6478%2033.8644H19.0771L19.5489%2038.9852L26.76%2040.9341L33.998%2038.9852L34.8067%2030.6253H12.3108L10.5855%2011.0561H43.0827L42.4896%2017.4671Z'%20fill='url(%23paint0_linear_73_10)'/%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_73_10'%20x1='1.2067'%20y1='30.3334'%20x2='52.8271'%20y2='30.3334'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23E44D26'/%3e%3cstop%20offset='1'%20stop-color='%23F16529'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" alt="Html icon" title="HTML 5"></div>
@@ -305,27 +31,15 @@
                 <img src="data:image/svg+xml,%3csvg%20width='54'%20height='62'%20viewBox='0%200%2054%2062'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M0.845703%200.847961L5.61634%2054.803L27.091%2061.9188L48.5657%2054.803L53.3363%200.847961H0.845703ZM43.6447%2011.7535L42.9886%2018.2014L27.2277%2024.9219L27.1867%2024.9355H42.4281L40.6784%2044.9198L27.2551%2048.8322L13.7497%2044.8517L12.8748%2034.7777H19.5592L19.9966%2039.9987L27.1867%2041.8118L34.6639%2039.7125L35.1697%2031.3152L12.4374%2031.2471V31.2334L12.41%2031.2471L11.9179%2024.9355L27.2414%2018.5694L28.1299%2018.2014H11.3302L10.5373%2011.7535H43.6447Z'%20fill='url(%23paint0_linear_73_14)'/%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_73_14'%20x1='0.777688'%20y1='31.3334'%20x2='53.2174'%20y2='31.3334'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23264DE4'/%3e%3cstop%20offset='1'%20stop-color='%232965F1'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" alt="Css icon" title="CSS 3"></div>
             <div class="icon js">
                 <img src="data:image/svg+xml,%3csvg%20width='53'%20height='53'%20viewBox='0%200%2053%2053'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M0.300293%200.32901V52.4378H52.4091V0.32901H0.300293ZM28.6577%2040.9692C28.6577%2046.0405%2025.6801%2048.3552%2021.3415%2048.3552C17.4218%2048.3552%2015.1536%2046.3313%2013.9905%2043.8771L17.9801%2041.4694C18.7477%2042.8302%2019.4456%2043.9817%2021.1322%2043.9817C22.7373%2043.9817%2023.7609%2043.3537%2023.7609%2040.8994V24.2549H28.6577V40.9692ZM40.2426%2048.3552C35.6947%2048.3552%2032.752%2046.1917%2031.3213%2043.3537L35.3109%2041.0506C36.3577%2042.7605%2037.7302%2044.0283%2040.1379%2044.0283C42.1618%2044.0283%2043.4645%2043.0163%2043.4645%2041.6089C43.4645%2039.934%2042.1385%2039.3408%2039.8937%2038.3521L38.6724%2037.8287C35.1364%2036.3283%2032.7985%2034.4323%2032.7985%2030.4428C32.7985%2026.7672%2035.6017%2023.9757%2039.9635%2023.9757C43.0807%2023.9757%2045.3139%2025.0574%2046.919%2027.8955L43.1039%2030.3381C42.2665%2028.8376%2041.3592%2028.2444%2039.9518%2028.2444C38.5212%2028.2444%2037.6139%2029.1517%2037.6139%2030.3381C37.6139%2031.8036%2038.5212%2032.3969%2040.6264%2033.3157L41.8477%2033.8391C46.0118%2035.6188%2048.3497%2037.4449%2048.3497%2041.5391C48.3497%2045.9358%2044.8835%2048.3552%2040.2426%2048.3552Z'%20fill='%23F7DF1E'/%3e%3c/svg%3e" alt="Javascript icon" title="JavaScript"></div>
-        </div>
+                <div class="icon tl">
+                    <img src="Imagens/testlink.png" alt="testlink icon" title="Testlink"></div>
+                <div class="icon loading">
+                    <img src="Imagens/loading.gif" alt="loading icon" title="Carregando..."></div>
+            </div>
     </section>       
 </section>
 <br><br><br><br><br>
+    <!-- Espaço onde o rodapé será carregado -->
+    <div id="footer"></div>
 </body>
-<footer class="footer">
-    <div class="contact">
-        <a class="icon__contact" href="https://www.linkedin.com/in/lucas-giacomelli-bb4922219" target="_blank">
-            <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
-        </a>
-        <a class="icon__contact" href="https://api.whatsapp.com/send?phone=5551995534090&amp;text=Olá,%20como%20vai?!" target="_blank"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
-        </a>
-        <a class="icon__contact" href="mailto:lukas.giacomelly@gmail.com" target="_blank"><i class="fa-solid fa-envelope" aria-hidden="true"></i>
-        </a>
-    </div>
-    <div class="copyright"><p>© LUCAS GIACOMELLI 2025 | Todos os direitos reservados.</p>
-    </div>
-    <div class="seta"></div>
-        <a href="#top">
-            <span class="material-symbols-outlined">stat_1</span> 
-        </a>
-    </div>
-</footer>
 </html>
